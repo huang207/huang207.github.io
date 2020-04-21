@@ -1,15 +1,11 @@
-video {
-    position: fixed; right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
-    background: url(video/index.jpg) no-repeat;
-    background-size: cover;
-}
-
 body {
 	margin: 0;
 	font-family: Helvetica;
-	background-color: #000000;
+	background-image:url('../pictures/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: bottom;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -18,6 +14,9 @@ body {
 }
 
 .form-wrapper {
+	filter:alpha(Opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
 	justify-content: center;
 	align-items: center;
 	background-color: #FFF;
@@ -29,7 +28,9 @@ body {
 	border-radius: 10px;
 }
 
-#building {
+#content {
+	text-align:center;
+	width: 400px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -39,7 +40,7 @@ body {
 }
 
 #footer {
-		position: absolute;
+	position: absolute;
 	top: 100%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-100%);
